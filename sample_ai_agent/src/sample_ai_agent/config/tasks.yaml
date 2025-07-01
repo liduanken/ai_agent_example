@@ -1,0 +1,40 @@
+research_task:
+  description: >
+    Conduct a thorough research about {topic}
+    Make sure you find any interesting and relevant information given
+    the current year is {current_year}.
+  expected_output: >
+    A list with 10 bullet points of the most relevant information about {topic}
+  agent: researcher
+
+recommender_task:
+  description: >
+    Develop personalized recommendations based on the data analysis task.
+    Use the insights and patterns identified to create recommendations that
+    are relevant to the topic and the current year.
+  expected_output: >
+    A set of personalized recommendations in JSON format that can be used
+    to inform strategic decisions related to {topic}.
+  agent: recommender
+
+data_analysis_task:
+  description: >
+    Analyze the data you got from the research task.
+    Make sure to use statistical methods and machine learning techniques
+    to uncover patterns and trends in the data.
+  expected_output: >
+    A detailed analysis of the data with insights and patterns identified.
+  agent: data_scientist
+
+reporting_task:
+  description: >
+    Create a detailed report based on the research, recommendations, and data analysis tasks. the recommendations
+    is in JSON format, so you should convert it to a Markdown table.
+    The report should include the findings from the research task, the analysis from the data analysis task,
+    and the recommendations from the recommender task.
+    Use the insights and patterns identified to create a report that is relevant to the topic and the
+    The report should be clear, concise, and easy to understand.
+  expected_output: >
+    A well-structured report in Markdown format that summarizes the findings
+    from the research and data analysis tasks.
+  agent: reporting_analyst 
